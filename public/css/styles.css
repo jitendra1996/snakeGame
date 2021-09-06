@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    /* overflow: hidden; */
+}
+
+#canvas{
+    background: #000000;
+    border: thin solid cornflowerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem cornflowerblue;
+    margin-top: 3rem;
+}
+
+.game__controller{
+    position: absolute;
+    right: 1%;
+    bottom: 10%;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: transparent;
+    color: cornflowerblue;
+    font-weight: 800;
+    font-size: 16px;
+    /* border: 1px solid cornflowerblue; */
+    text-align: center;
+    transition: all .1s;
+    border: none;
+}
+
+.btn:hover{
+    /* box-shadow: 0 0 20px cornflowerblue; */
+    /* border: 5px solid cornflowerblue; */
+    transform: scale(1.1);
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.play{
+    color: aliceblue;
+    text-align: center;
+    margin: 2rem;
+}
+
+
+.logo__container{
+    position: absolute;
+    top: 2%;
+    left: 32%;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    padding: .5rem;
+    border: .1rem solid blueviolet;
+    border-radius: 5rem;
+    box-shadow: 0 0 .5rem .3rem blueviolet;
+}
+
+.gameHeading{
+    color: black;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    text-shadow: 0 0 10px cornflowerblue;
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
